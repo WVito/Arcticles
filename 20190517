@@ -1,0 +1,73 @@
+## 数组中的第n大数字
+> 寻找数组中的第n大数字最简单的方法是先给数组排序，然后去特定位置取到数字即可。这种方法简
+单，但是时间复杂度很高，必须等到排序完成后才能获取到结果，对大数组处理时很耗费时间。
+
+> 快速排序先选取数组中的一个数作为pivot，遍历当前数组区间，将所有比pivot小的数组元素放到
+pivot左边，而比pivot大的则放到其右边。再将被pivot切分成的两段区间依次再次
+做相同操作，所有数字最终都会被放到其最终位置上。从前面的表述中就可以看到这个算法很适合
+递归处理，所以写出来的代码其实很简洁。这里说的是升序排序，降序把两边的大小关系对调即可。
+
+> 求第n大数字也就是要获取到倒数第n个位置上的数字（升序），因此如果快速排序过程中某个pivot
+刚好落在这个位置上，那么这个pivot就是要找的第n大数字。参考快速排序算法，每次的pivot会找
+到自己的最终位置，用这个位置和第n大数字的位置做比较，就能找到这个第n大的数字到底在pivot
+的左边还是右边，只需要计算其中的一边，直到最终找到这个数。
+快速排序的时间复杂度为O(nlog2n)，利用快速排序寻找第n大数的时间大概为nlog2(O(nlog2n)),
+时间上肯定比快速排序快，但是其时间复杂度也是O(nlog2n)。
+```
+int choose_nth(int arr[], int startIndex, int endIndex, int n)
+{
+	int midOne = arr[startIndex];
+	int i = startIndex, j = endIndex;
+	if (i == j) //递归出口之一
+		return arr[i];
+	if (i < j) {
+		while (i < j) {
+			for (; i < j; j--)
+				if (arr[j] < midOne) {
+					arr[i++] = arr[j];
+					break;
+				}
+			for (; i < j; i++) {
+				if (arr[i] > midOne) {
+					arr[j--] = arr[i];
+					break;
+				}
+			}
+		}
+		arr[i] = midOne;//支点归位
+		int th = endIndex - i + 1;//计算下标为i的数第几大
+		if (th == n) {//正好找到
+			return arr[i];
+		} else {
+			if (th > n) {//在支点右边找
+				return choose_nth(arr, i + 1, endIndex, n);
+			} else {//在支点左边找第(n-th)大,因为右边th个数都比支点大
+				return choose_nth(arr, startIndex, i - 1, n - th);
+			}
+		}
+	}
+}
+```
+[参考地址](http://www.cnblogs.com/HpuAcmer/p/4141103.html)
+
+
+## 算法技--巧位运算
+1. 快速计算整形数字的最大2的幂指数
+~~~
+template<typename T>
+T findN(T n) {
+	int size = sizeof(n);
+	for (int i = 1; i <= size + 1; ++i)
+	{
+		n |= n >> (1 << (i - 1));
+	}
+	return (n + 1) >> 1;
+}
+~~~
+2. 交换两个数
+~~~
+x = x ^ y
+y = x ^ y
+x = x ^ y
+~~~
+[参考地址](https://www.cnblogs.com/kubidemanong/p/10880482.html)
