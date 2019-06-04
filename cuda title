@@ -11,3 +11,7 @@
    6. 纹理内存
 5. CUDA实践
 6. 应用程序性能优化
+
+## Cuda Hello World
+---
+cuda是用来批量计算
