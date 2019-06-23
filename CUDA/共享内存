@@ -1,0 +1,7 @@
+## 共享内存
+共享内存：静态分配和动态分配
+
+__syncthreads() is allowed in conditional code but only if the conditional evaluates
+identically across the entire thread block, otherwise the code execution is likely to hang
+or produce unintended side effects.__syncthreads()函数允许在条件语句中出现的必要条件为所有线程
+都能执行到__syncthreads()语句，否则线程可能会挂起或者产生一些其他意想不到的效果。
