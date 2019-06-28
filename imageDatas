@@ -1,0 +1,237 @@
+%YAML:1.0
+---
+num: 9
+imageDatas:
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 7.3392577233797158e+02, -3.1542993483440586e+02,
+             5.6041977954173433e+02, 1.2902886441202998e+04,
+             4.0484121152881318e+02, 7.8691291101822833e+02,
+             2.4998036490761325e+02, 5.5851507583482271e+03,
+             -6.9388939039072284e-18, 1.6749473945972881e-01,
+             9.8587296963316606e-01, 4.0127830693234001e-03 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 1, 2, 4, 3, 5 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V01.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V01_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 6.4887932732043555e+02, -4.1841301472563248e+02,
+             5.9674079806689792e+02, 1.1813877170846552e+04,
+             4.4150102922815461e+02, 7.2812198974685043e+02,
+             3.4717967704952207e+02, -1.3271226980588733e+03,
+             -8.0837345612166434e-02, 9.5435740363774502e-02,
+             9.9214784332557882e-01, -1.8142545211507215e+00 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 2, 0, 4, 5, 3 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V02.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V02_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 7.7823149523156337e+02, -3.1953306787674853e+02,
+             4.9443682180441436e+02, 1.1031782597882766e+04,
+             4.0463385882589625e+02, 7.8595678656047608e+02,
+             2.5330197170538884e+02, -7.6891226040778729e+03,
+             6.6072383741631546e-02, 1.2833834162233956e-01,
+             9.8952701336362014e-01, -5.5987091208837381e-01 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 5, 4, 1, 8, 0 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V03.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V03_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 6.5593343646038454e+02, -4.8312810737934075e+02,
+             5.3717033721758924e+02, 7.4199922343262745e+02,
+             4.8326638053854163e+02, 6.8504843111566413e+02,
+             3.7786342954272209e+02, 4.6582584931410374e+03,
+             -3.6517484910031581e-02, 2.6896972147116296e-02,
+             9.9897098365526249e-01, -7.5075712014055773e-02 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 4, 5, 7, 8, 0 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V04.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V04_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 6.3713532919315060e+02, -5.3163404234531174e+02,
+             5.1345616142631957e+02, -1.6944259907788355e+03,
+             5.4796686020396601e+02, 6.4628548433151980e+02,
+             3.5730366885777028e+02, -1.5946160630265217e+03,
+             3.4997013524946385e-03, 2.9694337395420489e-02,
+             9.9955289925900881e-01, 2.6770175968747367e-01 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 5, 8, 2, 3, 1 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V05.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V05_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 7.6258811127108129e+02, -3.2966384499752326e+02,
+             5.1185401653458359e+02, -1.8591419485131944e+03,
+             4.0609900386402671e+02, 7.8064809011214004e+02,
+             2.6700314114923123e+02, -7.8196308313336613e+03,
+             4.2957794674559902e-02, 1.2308091910885685e-01,
+             9.9146644684932095e-01, -1.0609204015362110e+00 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 4, 8, 2, 3, 1 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V06.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V06_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 5.4969366098725186e+02, -6.6518788409036927e+02,
+             4.5560440112332248e+02, -1.5328908485550250e+04,
+             6.6739948393024542e+02, 5.1704497317409141e+02,
+             3.6450095127953784e+02, 9.2198283722013946e+02,
+             4.4811390418220798e-02, -3.0215254356283694e-02,
+             9.9853842073951804e-01, -1.1299436522957247e+00 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 4, 8, 3, 5 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V07.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V07_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 7.7506691016448758e+02, -3.5714696216385306e+02,
+             4.7321321259907450e+02, -1.2344205104898276e+04,
+             4.0844833914640731e+02, 7.6441658352887168e+02,
+             3.0733655817886688e+02, 5.8749030969237283e+03,
+             6.4163823477598539e-02, 6.0042434211055734e-02,
+             9.9613147217159359e-01, -1.2346078987996139e+00 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 4, 8, 3, 5 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V08.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V08_depth.tif"
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 7.7288084291160590e+02, -3.2426245060133118e+02,
+             4.9972240112225961e+02, -1.0366129514373744e+04,
+             3.9248171584077375e+02, 7.8325716970760004e+02,
+             2.7943662564339127e+02, -4.8576046296331961e+03,
+             4.8042643498537360e-02, 1.0445250342804800e-01,
+             9.9336880308034936e-01, -2.8009672163832350e-01 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 4, 5, 2, 7, 3 ]
+      imageFullPathFileName: "D:/data/wcgc9/undistorted/V09.jpg"
+      depthMapFullPathFileName: "D:/data/wcgc9/depth/V09_depth.tif"
+
+
+void readData(const char *fileName, std::vector<ImageData>& imgDatas)
+{
+	cv::FileStorage fs(fileName, cv::FileStorage::READ);
+	if (!fs.isOpened())
+	{
+		printf("Failed to open file %s\n", fileName);
+		return;
+	}
+	int num = 0;
+	fs["num"] >> num;
+
+	cv::FileNode fileNode = fs["imageDatas"];
+	cv::FileNodeIterator it = fileNode.begin();
+	cv::FileNodeIterator itE = fileNode.end();
+	for (cv::FileNodeIterator it = fileNode.begin(); it != fileNode.end(); ++it) {
+		ImageData imgData;
+		(*it)["pMat"] >> imgData.pMat;
+		(*it)["k1"] >> imgData.k1;
+		(*it)["k2"] >> imgData.k2;
+		(*it)["k3"] >> imgData.k3;
+		(*it)["p1"] >> imgData.p1;
+		(*it)["p2"] >> imgData.p2;
+		(*it)["b1"] >> imgData.b1;
+		(*it)["b2"] >> imgData.b2;
+		(*it)["scale"] >> imgData.scale;
+		(*it)["matchImageIndexs"] >> imgData.matchImageIndexs;
+		(*it)["imageFullPathFileName"] >> imgData.imageFullPathFileName;
+		(*it)["depthMapFullPathFileName"] >> imgData.depthMapFullPathFileName;
+
+		imgDatas.push_back(imgData);
+	}
+	fs.release();
+}
