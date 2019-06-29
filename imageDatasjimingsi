@@ -1,0 +1,26 @@
+%YAML:1.0
+---
+num: 325
+imageDatas:
+   -
+      pMat: !!opencv-matrix
+         rows: 3
+         cols: 4
+         dt: d
+         data: [ 5.2578020597164777e+02, -2.4606568740553593e+02,
+             -5.0176325381264888e+02, 1.2600152299639638e+05,
+             -2.4466665266305506e+02, -5.3047817283537677e+02,
+             -3.7283400049014693e+02, 3.4994519703846046e+04,
+             -4.6694939413950004e-03, -6.2844126816301001e-03,
+             -9.9996935052209401e-01, 1.9347847533107802e+02 ]
+      k1: 0.
+      k2: 0.
+      k3: 0.
+      p1: 0.
+      p2: 0.
+      b1: 0.
+      b2: 0.
+      scale: 2.
+      matchImageIndexs: [ 1, 2, 3, 4, 5 ]
+      imageFullPathFileName: "D:/data/jimingsi326/new/DJI_0398.jpg"
+      depthMapFullPathFileName: "D:/data/jimingsi326/depth/DJI_0398_depth.tif"
